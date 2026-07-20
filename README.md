@@ -48,6 +48,6 @@ Jira ticket comes through Phase 2.
 ## Branch protection / access note
 
 Claude Code should only be granted read/write access scoped to **this repo**
-and the **KAN Jira project**, not the org-wide GitHub org or other Jira
+and the **AIAT Jira project**, not the org-wide GitHub org or other Jira
 projects — this pilot intentionally excludes Payment/Grading/student-data
 work.

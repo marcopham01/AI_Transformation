@@ -10,8 +10,8 @@ source of truth, not this initial draft.
 One branch per Jira ticket, created by whoever/whatever picks up the ticket:
 
 ```
-feature/KAN-123-short-kebab-description
-bug/KAN-124-short-kebab-description
+feature/AIAT-123-short-kebab-description
+bug/AIAT-124-short-kebab-description
 ```
 
 - Ticket key first so it's traceable from the branch list alone.
