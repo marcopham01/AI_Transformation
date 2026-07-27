@@ -123,20 +123,24 @@ No prior context → load-balance within discipline (Rule C).
 > groups. Replace `<account-id-...>` with the real IDs from
 > `lookupJiraAccountId` before relying on auto-assign.
 
-| Display name | Account ID | Role | Discipline |
-|---|---|---|---|
-| Nam Phạm | 712020:00638aa2-ee3c-42b4-8384-2169fee560f2 | Dev | BE |
-| Phương Nam Phạm | 712020:ec203f5c-14e1-49bb-8b7b-06c949d6ad0d | Dev | FE |
-| Phạm Nam | 712020:fac60a14-516f-4ade-bcd3-0014efa9d532 | QC | QC |
-| _(none yet)_ | — | Dev | Mobile |
+| Display name | Account ID | Role | Discipline | Telegram chat_id |
+|---|---|---|---|---|
+| Nam Phạm | 712020:00638aa2-ee3c-42b4-8384-2169fee560f2 | Dev | BE | 7576118866 |
+| Phương Nam Phạm | 712020:ec203f5c-14e1-49bb-8b7b-06c949d6ad0d | Dev | FE | 7576118866 |
+| Phạm Nam | 712020:fac60a14-516f-4ade-bcd3-0014efa9d532 | QC | QC | 7576118866 |
+| _(none yet)_ | — | Dev | Mobile | — |
 
 Notes:
 - **Mobile has no member yet** → Mobile subtasks stay Unassigned + flagged
   until a Mobile dev is added here and to the Jira group.
 - Account IDs are the ONLY reliable key — the three Vietnamese names are very
   similar and several accounts have no email shown in Jira.
+- **Telegram chat_id** is used by the notification step (see CLAUDE.md). During
+  the pilot test all three point to the BA's own chat_id (7576118866) — replace
+  each with the person's real chat_id at rollout (each dev DMs the bot once,
+  then read their id from getUpdates).
 - To add someone: add them to the Jira project + the correct Jira group,
-  then add a row here with their account ID and discipline.
+  then add a row here with their account ID, discipline, and Telegram chat_id.
 
 ## Prerequisites (why this may not fully run yet)
 
