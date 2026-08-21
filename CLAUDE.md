@@ -23,10 +23,10 @@ or pasted text) and ask you to process / handle / turn it into tickets:
    or `docs/templates/bug-ticket-template.md` (classify Feature vs Bug by the
    cues in `ba-meeting-note-template.md`).
 4. **Naming / labels / priority**: follow
-   `docs/rules/naming-conventions.md` (title format, Vietnamese-with-
+   `.claude/naming-conventions.md` (title format, Vietnamese-with-
    diacritics Component, meeting label = Source, module-family label,
    priority rules).
-5. **Subtasks + assignment**: follow `docs/rules/assignment-rules.md`
+5. **Subtasks + assignment**: follow `.claude/assignment-rules.md`
    (parent unassigned; split BE/FE/QC as needed; assign each subtask by
    discipline using context-first then load-balance; always write an
    `Assign note:`; QC assigned later at Testing).
@@ -47,7 +47,7 @@ or pasted text) and ask you to process / handle / turn it into tickets:
 ## Project facts
 
 - Jira project key: **AIAT** (renamed from KAN).
-- Team roster (who is FE/BE/QC) lives in `docs/rules/assignment-rules.md`
+- Team roster (who is FE/BE/QC) lives in `.claude/assignment-rules.md`
   — that file is the source of truth, since you can't read Jira groups.
 - Components aren't enabled on this Jira project → use **labels** in their
   place (already reflected in the conventions).
